@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-sm navbar-light bg-light fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="javascript:void(0)">
+            <img src="images/logoo-removebg-preview.png" class="ms-5 logo" >
+          </a>
+          <a class="navbar-brand ego" href="#"> EGYPTION TOURISM</a>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mynavbar">
+            <ul class="navbar-nav me-auto ms-3">
+               
+              <li class="nav-item ms-2">
+                <a class="nav-link navy " href="javascript:void(0)"> Home</a>
+              </li>
+              <li class="nav-item ms-2">
+                <a class="nav-link navy " href="javascript:void(0)"> Journies </a>
+              </li>
+              <li class="nav-item ms-2">
+                <a class="nav-link navy " href="javascript:void(0)"> Hotels </a>
+              </li>
+
+              <li class="nav-item ms-2">
+                <a class="nav-link navy " href="javascript:void(0)"> About us</a>
+              </li>
+              
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle navy " href="#" role="button" data-bs-toggle="dropdown"> Places</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item navy" href="#"> Giza </a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item navy" href="#"> Cairo</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item navy" href="#"> Alex</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item navy" href="#"> Aswan</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item navy" href="#"> Luxor</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item navy" href="#"> Red Sea</a></li>
+                </ul>
+              </li>
+
+
+
+
+            </ul>
+            <form class="d-flex pe-3">
+              <input class="form-control me-2" type="text" placeholder="Search">
+              <button class="btn btn-primary sear " type="button">Search</button>
+            </form>
+
+            <button type="button" class="btn btn-light mx-1 text-light log " data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Login
+              </button>
+          </div>
+        </div>
+      </nav>
+</header>
+
+ <!-- Modal -->
+
+      <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog ">
+          <div class="modal-content bg-light">
+            <div class="modal-header">
+              <h5 class="modal-title navy" id="exampleModalLabel">Login</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                    <form>
+                        <div class="m-3">
+                            <label class="form-label text-secondary">Email address</label>
+                            <input type="email" class="form-control text-dark border-3 border-dark rounded-2"
+                                aria-describedby="emailHelp">
+                            <p class="form-text navy">We'll never share your email with anyone else.</p>
+                        </div>
+                        <div class="m-3">
+                            <label class="form-label text-secondary">Password</label>
+                            <input type="password" class="form-control text-dark border-3 border-dark rounded-2">
+                        </div>
+                        <div class="m-3 form-check">
+                            <div class="form-check form-switch">
+                                <input class="form-check-input bg-secondary border-secondary" type="checkbox" role="switch" checked>
+                                <label class="form-check-label text-secondary" for="flexSwitchCheckChecked">Remmember me</label>
+                            </div>
+                        </div> 
+                        <!--form check -->
+                    <!-- </form> -->
+                </div>
+                <div class="modal-footer d-flex  justify-content-between">
+                    <button type="submit" class="btn sear text-light" data-bs-dismiss="modal">Login</button>
+                    <button type="button" class="btn sear text-light" data-bs-dismiss="modal">Close</button>
+                </div>
+           </div>
+        </div>
+    </div>
+
+<div class="icons">
+    <ul class="social-icons">
+        <li><a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a></li>
+        <li><a href="https://www.whatsapp.com" target="_blank"><i class="fab fa-whatsapp"></i></a></li>
+        <li><a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+        <li><a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a></li>
+        <li><a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a></li>
+    </ul>
+</div>
+
+<!-----------------------Main----------------->
+
+
+
+<!-- Carousel -->
+<div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+    <!-- Indicators/dots -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+    </div>
+    
+    <!-- The slideshow/carousel -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="images/ooo.png" alt="Los Angeles" class="d-block imo" style="width:100%">
+        <div class="carousel-caption overlay">
+          <h3> IT'S LuXor</h3>
+          <p>Where There are many wonderful temples</p>
+          <button class="btn sear mb-4 text-light"> Visit us</button>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="images/img1.png" alt="Chicago" class="d-block imo" style="width:100%">
+        <div class="carousel-caption overlay">
+          <h3>IT'S The Pyramids in Giza</h3>
+          <p>The Most Popular Place in Egypt!</p>
+          <button class="btn sear mb-4 text-light"> Visit us</button>
+        </div> 
+      </div>
+      <div class="carousel-item">
+        <img src="images/aswan_0.jpg" alt="New York" class="d-block imo" style="width:100%">
+        <div class="carousel-caption overlay">
+          <h3> IT'S ASWAN </h3>
+          <p> A Unique Tourist Destination in Egypt!</p>
+          <button class="btn sear mb-4 text-light"> Visit us</button>
+        </div>  
+      </div>
+    </div>
+    
+    <!-- Left and right controls/icons -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+  <!-------------------------/mai-->
+
+
+  <!-------Section1------------------->
+ <div class="welcome mt-4 "> 
+    <h2 class="">WelCome To EgypT</h2>
+    <p class=""> You Will Enjoy EveryWhere in Egypt , Just trust us .. uou can Book a journey & a Hotel , too  </p>
+    <button class="mb-4 "> Learn More</button>
+    <button class="mb-4 "> Book Your journey</button>
+    <button class="mb-4 "> Book Hotel</button>
+</div>
+<!----------------section2------------------------->
+
+<div class="container popular mt-5">
+    <h2 class="pt-4 pb-4 text-light"> Popular Destinations in Egypt</h2>
+
+
+    <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button navy" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Giza
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div class="accordion-body ego">
+              <strong> Giza is Popular with pyramids . </strong> The Pyramids of Giza, located on the outskirts of Cairo, Egypt, are ancient monumental tombs built over 4,500 years ago for Pharaohs Khufu, Khafre, and Menkaure. The Great Pyramid of Khufu, the largest of the three, is one of the Seven Wonders of the Ancient World and the only one still largely intact.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed navy" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Cairo
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+            <div class="accordion-body ego">
+              <strong> Cairo Which is the Capital Of Egypt.</strong> Cairo is home to several renowned museums, including the Egyptian Museum, which houses an extensive collection of ancient Egyptian artifacts, such as the treasures of Tutankhamun. The National Museum of Egyptian Civilization offers a comprehensive overview of Egypt's history from prehistoric times to the present day .
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed navy" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Alex
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+            <div class="accordion-body ego">
+              <strong> Alexandria, Egypt, </strong> 
+              is famous for its stunning Mediterranean coastline, featuring popular spots like the historic Qaitbay Citadel and the serene Montaza Palace gardens. The city also boasts cultural treasures like the Bibliotheca Alexandrina, a modern library and cultural center, and the ancient Catacombs of Kom El Shoqafa.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFour">
+              <button class="accordion-button navy" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                Aswan
+              </button>
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse show" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+              <div class="accordion-body ego">
+                <strong> Aswan  located in southern Egypt,</strong> 
+                 is known for its beautiful Nile views, vibrant Nubian culture, and significant archaeological sites like the Philae Temple and the Unfinished Obelisk. It’s also famous for the Aswan High Dam, which created Lake Nasser and transformed the region.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFive">
+              <button class="accordion-button navy" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+                Luxor
+              </button>
+            </h2>
+            <div id="collapseFive" class="accordion-collapse collapse show" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+              <div class="accordion-body ego">
+                <strong> Luxor, </strong> often called the world's greatest open-air museum, is renowned for its vast collection of ancient temples and tombs, including the majestic Karnak Temple and the Valley of the Kings, where Pharaohs like Tutankhamun were buried. This city along the Nile River is a hub for exploring Egypt's rich history and culture.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingSix">
+              <button class="accordion-button navy" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
+                Red Sea
+              </button>
+            </h2>
+            <div id="collapseSix" class="accordion-collapse collapse show" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+              <div class="accordion-body ego">
+                <strong>The Red Sea in Egypt ,</strong>  is a popular destination for its crystal-clear waters, vibrant coral reefs, and diverse marine life, making it a paradise for snorkeling and scuba diving enthusiasts. Coastal resorts like Hurghada and Sharm El Sheikh offer stunning beaches, luxury accommodations, and a variety of water sports and recreational activities.
+              </div>
+            </div>
+          </div>
+      </div>
+</div>
+
+      <!----------section3---------------------------------------->
+
+      <div class="translate mt-5 sear">
+        <div class="container">
+        <h2 class="text-light text-center pt-3"> Translate From Arabic To English </h2>
+        <p class="ego "> Write & Translate  <a href="#" class="text-light">  Press Here </a></p>
+
+      <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary mb-3  log" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+    Copy
+  </button>
+  <div class="textarea ">
+    <form>
+        <textarea class="ego texto p-1" rows="4" placeholder="Translate :"  ></textarea>
+      </form>
+  </div>
+        </div>
+      </div>
+  
+  <!-- Modal -->
+  <div class="modal fade " id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog ">
+      <div class="modal-content ">
+        <div class="modal-header">
+          <h5 class="modal-title ego" id="staticBackdropLabel"> Translation From Arabic To English</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body navy">
+          text is copied 
+        </div>
+        <div class="modal-footer ">
+          <button type="button" class="btn log text-light " data-bs-dismiss="modal"> Ok</button>
+          <button type="button" class="btn log text-light">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="translate mt-5 log">
+    <div class="container">
+    <h2 class="text-light text-center pt-3"> Translate From Arabic To Frensh </h2>
+    <p class="navy "> Write & Translate  <a href="#" class="text-light">  Press Here </a></p>
+
+  <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary mb-3  sear" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+Copy
+</button>
+<div class="textarea ">
+<form>
+    <textarea class="ego texto p-1" rows="4" placeholder="Translate :"  ></textarea>
+  </form>
+</div>
+    </div>
+  </div>
+
+<!-- Modal -->
+<div class="modal fade " id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+<div class="modal-dialog ">
+  <div class="modal-content ">
+    <div class="modal-header">
+      <h5 class="modal-title ego" id="staticBackdropLabel"> Translation From Arabic To Frensh</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+    <div class="modal-body navy">
+      text is copied 
+    </div>
+    <div class="modal-footer ">
+      <button type="button" class="btn log text-light " data-bs-dismiss="modal"> Ok</button>
+      <button type="button" class="btn log text-light">Close</button>
+    </div>
+  </div>
+</div>
+</div>
+
+
+<div class="translate mt-5 sear">
+    <div class="container">
+    <h2 class="text-light text-center pt-3"> Translate From Arabic To German </h2>
+    <p class="ego "> Write & Translate  <a href="#" class="text-light">  Press Here </a></p>
+
+  <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary mb-3  log" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+Copy
+</button>
+<div class="textarea ">
+<form>
+    <textarea class="ego texto p-1" rows="4" placeholder="Translate :"  ></textarea>
+  </form>
+</div>
+    </div>
+  </div>
+
+<!-- Modal -->
+<div class="modal fade " id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+<div class="modal-dialog ">
+  <div class="modal-content ">
+    <div class="modal-header">
+      <h5 class="modal-title ego" id="staticBackdropLabel"> Translation From Arabic To German</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+    <div class="modal-body navy">
+      text is copied 
+    </div>
+    <div class="modal-footer ">
+      <button type="button" class="btn log text-light " data-bs-dismiss="modal"> Ok</button>
+      <button type="button" class="btn log text-light">Close</button>
+    </div>
+  </div>
+</div>
+</div>
+
+<!------------------------section4--------------------------->
+<div class="places mt-5" ></div>
+<div class="destination">
+    <h2 class=" log pt-3 pb-3 text-light text-center">Popular Destinations in Egypt</h2>
+</div>
+
+<div class="container  mt-5">
+    <div class="row  ">
+   
+
+        <div class="card cards col-12 col-sm-12 col-md-12 col-lg-3  ">
+            <img src="images/image1.png" class="card-img-top rounded" alt="..." width="80%" height="250px">
+            <div class="card-body">
+              <h5 class="card-title navy">Pyramids</h5>
+              <p class="card-text ego"> Which is in Giza , You Will Enjoy Visiting It</p>
+              <a href="#" class="btn text-light sear">Know more </a>
+            </div>
+          </div>
+
+          <div class="card  cards cardo col-12 col-sm-12 col-md-12 col-lg-3 " >
+            <img src="images/Luxor-Temple.jpg" class="card-img-top rounded" alt="..." width="80%" height="250px">
+            <div class="card-body">
+              <h5 class="card-title navy">abu-Simpel temble</h5>
+              <p class="card-text ego"> Which is in southern Egypt , You Will Enjoy Visiting It</p>
+              <a href="#" class="btn text-light sear">Know more </a>
+            </div>
+          </div>
+
+          <div class="card  cards cardo col-12 col-sm-12 col-md-12 col-lg-3  ">
+            <img src="images/alex2.png" class="card-img-top rounded" alt="..." width="80%" height="250px">
+            <div class="card-body">
+              <h5 class="card-title navy"> Qaitbay Citadel</h5>
+              <p class="card-text ego"> Which is in Alexandria , You Will Enjoy Visiting It</p>
+              <a href="#" class="btn text-light  sear"> Know more </a>
+            </div>
+          </div> 
+    </div>
+
+    <div class="row mt-5 ">
+   
+
+        <div class="card  cards col-12 col-sm-12 col-md-12 col-lg-3  ">
+            <img src="images/museum2.jpg" class="card-img-top rounded" alt="..." width="80%" height="250px">
+            <div class="card-body">
+              <h5 class="card-title navy">Egyptian Museum</h5>
+              <p class="card-text ego"> Which is in Cairo , You Will Enjoy Visiting It</p>
+              <a href="#" class="btn text-light sear">Know more </a>
+            </div>
+          </div>
+
+          <div class="card  cards cardo col-12 col-sm-12 col-md-12 col-lg-3 " >
+            <img src="images/redsea.png" class="card-img-top rounded" alt="..." width="80%" height="250px">
+            <div class="card-body">
+              <h5 class="card-title navy"> Red Sea</h5>
+              <p class="card-text ego"> Which is in the east , You Will Enjoy Visiting It</p>
+              <a href="#" class="btn text-light sear">Know more </a>
+            </div>
+          </div>
+
+          <div class="card  cards cardo col-12 col-sm-12 col-md-12 col-lg-3 ">
+            <img src="images/aswan.png" class="card-img-top rounded" alt="..." width="80%" height="250px">
+            <div class="card-body">
+              <h5 class="card-title navy"> Aswan</h5>
+              <p class="card-text ego"> Which is wonderful , You Will Enjoy Visiting It</p>
+              <a href="#" class="btn text-light  sear"> Know more </a>
+            </div>
+          </div> 
+    </div>
+
+
+    <div class="row mt-5 ">
+   
+
+        <div class="card  cards cardy col-12 col-sm-12 col-md-12 col-lg-3   ">
+            <img src="images/safari.png" class="card-img-top rounded" alt="..." width="80%" height="250px">
+            <div class="card-body">
+              <h5 class="card-title navy"> SaFari</h5>
+              <p class="card-text ego"> Which is in sharm-elshiekh , You Will Enjoy Visiting It</p>
+              <a href="#" class="btn text-light sear">Know more </a>
+            </div>
+          </div>
+
+          <div class="card  cards cardy col-12 col-sm-12 col-md-12 col-lg-3   " >
+            <img src="images/camping.png" class="card-img-top rounded" alt="..." width="80%" height="250px">
+            <div class="card-body">
+              <h5 class="card-title navy"> Camping</h5>
+              <p class="card-text ego"> Which is in the desert , You Will Enjoy Visiting It</p>
+              <a href="#" class="btn text-light sear">Know more </a>
+            </div>
+          </div>
+    </div>
+    </div>
+
+    <!--------------------section5-------------------------->
+    <div class="places2 mt-5" ></div>
+    <div class="destination">
+        <h2 class=" log pt-3 pb-3 text-light text-center"> The Hotels We Deal with</h2>
+    </div>
+
+    <div class="container mt-5">
+        <div class="row ">
+   
+
+            <div class="card  cardss cardoo    ">
+                <img src="images/hotel1.png" class="card-img-top rounded" alt="..." width="80%" height="250px">
+                <div class="card-body">
+                  <h5 class="card-title navy">Pyramids</h5>
+                  <p class="card-text ego"> Which is in Cairo  <br> the Hotels we deal with are trusted & Secured</p>
+                  <a href="#" class="btn text-light sear"> Book now </a>
+                </div>
+              </div>
+              <div class="card  cardss cardoo   ">
+                <img src="images/Hotel2.png" class="card-img-top rounded" alt="..." width="80%" height="250px">
+                <div class="card-body">
+                  <h5 class="card-title navy"> Hotel</h5>
+                  <p class="card-text ego"> Which is in Alex <br> the Hotels we deal with are trusted & Secured</p>
+                  <a href="#" class="btn text-light sear"> Book Now </a>
+                </div>
+              </div>
+        </div>
+        <div class="row mt-5">
+
+              <div class="card  cardss cardoo   ">
+                <img src="images/hotel5.png" class="card-img-top rounded" alt="..." width="80%" height="250px">
+                <div class="card-body">
+                  <h5 class="card-title navy"> Hotel</h5>
+                  <p class="card-text ego"> Which is in Aswan <br> the Hotels we deal with are trusted & Secured</p>
+                  <a href="#" class="btn text-light sear"> Book Now </a>
+                </div>
+              </div>
+
+              <div class="card  cardss cardoo   ">
+                <img src="images/hotel4.png" class="card-img-top rounded" alt="..." width="80%" height="250px">
+                <div class="card-body">
+                  <h5 class="card-title navy"> Hotel</h5>
+                  <p class="card-text ego"> Which is in Sharm-ElShiekh <br> the Hotels we deal with are trusted & Secured </p>
+                  <a href="#" class="btn text-light sear"> Book Now </a>
+                </div>
+              </div>
+        </div>
+        
+    </div>
+    <hr class="bg-black">
+
+    <!------------------section6----------------------------->
+    <div class="News container">
+      <h2 class="text-center navy pt-5"> What Egypt Popular With : </h2>
+
+      <div class="card clip1 mb-3 mt-5">
+        <div class="row g-0">
+          <div class="col-md-8 col-12  ">
+            <div class="card-body ms-4">
+              <h5 class="card-title navy fs-3">Coral reefs</h5>
+              <i class="fa-regular fa-calendar-days navy"></i>
+              <span class="ego fs-6"> Friday , August 30th 2024</span>
+              <div class="line mt-2"></div>
+              <p class="card-text ego pt-3 fs-5">
+                Coral reefs are vibrant underwater ecosystems formed by colonies of tiny animals called coral polyps, which secrete calcium carbonate to build their hard skeletons. They provide critical habitats for a vast array of marine species, supporting biodiversity and protecting coastlines from erosion.</p>
+                <button class="ego bb"> Podcast</button>
+                <button class="ego bb"> 55 mins</button>
+                <button class="ego bb"> Play Eposide</button>
+            </div>
+          </div>
+          <div class="col-md-4 col-12 ">
+            <img src="images/pngtree-coral-reef-sea-plants-beautiful-ocean-background-image_2120666.jpg" class="rounded-start"  alt="..." height="350px" width="350px">
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="card clip mb-3 mt-5">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="images/most-important-4-models-topic-tourism-egypt.jpg" class="rounded-start"  alt="..." height="350px" width="350px">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title navy fs-3">Camal Riding</h5>
+              <i class="fa-regular fa-calendar-days navy"></i>
+              <span class="ego fs-6"> monday , August 20th 2024</span>
+              <div class="line mt-2"></div>
+              <p class="card-text ego pt-3 fs-5">
+                Camel riding near the pyramids is a popular activity that offers a unique way to experience the historical and natural beauty of Egypt. The pyramids, particularly those at Giza, are among the most famous ancient structures in the world, and seeing them from the back of a camel adds to the adventure.</p>
+                <button class="ego bb"> Podcast</button>
+                <button class="ego bb"> 55 mins</button>
+                <button class="ego bb"> Play Eposide</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="card clip1 mb-3 mt-5">
+        <div class="row g-0">
+          <div class="col-md-8">
+            <div class="card-body ms-4">
+              <h5 class="card-title navy fs-3"> The Nile</h5>
+              <i class="fa-regular fa-calendar-days navy"></i>
+              <span class="ego fs-6"> Friday , August 30th 2024</span>
+              <div class="line mt-2"></div>
+              <p class="card-text ego pt-3 fs-5">
+                The Nile is the longest river in the world, stretching about 6,650 kilometers (4,130 miles) and flowing through eleven countries in northeastern Africa, including Egypt, Sudan, and Uganda. In Egypt, the Nile is a vital lifeline, providing essential water resources that support agriculture, industry, and daily life for millions of people.</p>
+                <button class="ego bb"> Podcast</button>
+                <button class="ego bb"> 55 mins</button>
+                <button class="ego bb"> Play Eposide</button>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <img src="images/1710813_0.jpeg" class="rounded-start"  alt="..." height="350px" width="350px">
+          </div>
+        </div>
+      </div>
+      <div class="card clip mb-3 mt-5">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="images/library_of_alexandria_01.jpg" class="rounded-start"  alt="..." height="350px" width="350px">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title navy fs-3">Alexandria Library</h5>
+              <i class="fa-regular fa-calendar-days navy"></i>
+              <span class="ego fs-6"> monday , August 20th 2024</span>
+              <div class="line mt-2"></div>
+              <p class="card-text ego pt-3 fs-5">
+                
+The Library of Alexandria, also known as the Great Library of Alexandria, was one of the most famous libraries of the ancient world. Located in Alexandria, Egypt, it was founded in the 3rd century BCE during the reign of Ptolemy II Philadelphus.</p>
+                <button class="ego bb"> Podcast</button>
+                <button class="ego bb"> 55 mins</button>
+                <button class="ego bb"> Play Eposide</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!--------------------join us--------------------------->
+
+    <div class="join-us mt-5 ">
+      <div class="container sss">
+        <div class="d-flex  ">
+
+          <div class="twiter social mt-3 mb-3 col-md-6 col-lg-3  ">
+            <h2 class="pt-3 navy">Subscribe</h2>
+            <img src="images/twitter Image 2024-08-29 at 05.01.26_9086f1b5.jpg" class="rounded" width="80px">
+            <br>
+            <a href="#" class="pt-4 ego">Go Now</a>
+          </div>
+
+          <div class="whatsap social mt-3 mb-3 socialo  col-md-6 col-lg-3  ">
+            <h2 class="pt-3 navy">Follow</h2>
+            <img src="images/WhatsApp2 Image 2024-08-29 at 05.01.25_75d1f6f0.jpg" class="rounded" width="80px">
+            <br>
+            <a href="#" class="pt-3 ego">Go Now</a>
+          </div>
+
+          <div class="linkedin social mt-3 mb-3 socialo col-md-6 col-lg-3    ">
+            <h2 class="pt-3 navy">Like </h2>
+            <img src="images/linkedin Image 2024-08-29 at 05.01.25_eaf1ed26.jpg" class="rounded" width="80px">
+            <br>
+            <a href="#" class="pt-3 ego">Go Now</a>
+          </div>
+
+          <div class="instagram social mt-3 mb-3 socialo   col-md-6 col-lg-3   ">
+            <h2 class="pt-3 navy">watch</h2>
+            <img src="images/instagram Image 2024-08-29 at 05.01.25_3702bd5f.jpg" class="rounded" width="80px">
+            <br>
+            <a href="#" class="pt-3 ego">Go Now</a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!------------Footer----------------------------->
+    <footer class="sear  footer mt-5">
+      <div class="container ">
+        <div class="d-flex">
+        <div class=" mt-4 foot  ">
+          <div class="infimg mt-4">
+          <img src="images/logoo-removebg-preview.png" class="logo   ">
+          <span class="ps-2 text-light "> Company</span>
+          <div class="line1 mt-4"></div>
+          <p class="text-light pt-3"> Tel : 01012345633</p>
+          <p class="text-light"> Adress : Egypt</p>
+          <p class="text-light"> Fex : 000-000-000</p>
+          
+        </div>
+        </div>
+        <div class=" mt-4 foot footo ">
+          <div class="infimg mt-4">
+          <img src="images/logoo-removebg-preview.png" class="logo  ">
+          <span class="ps-2 text-light"> Links</span>
+          <div class="line2 mt-4"></div>
+          <p class="text-light pt-3"> Visit Us</p>
+          <p class="text-light"> Take A Look</p>
+          <p class="text-light"> You Are Imprtant To Us</p>
+        </div>
+        </div>
+        
+        <div class=" mt-4 foot footo ">
+          <div class="infimg mt-4">
+          <img src="images/logoo-removebg-preview.png" class="logo ">
+          <span class="ps-2 text-light">Vision</span>
+          <div class="line1 mt-4"></div>
+          <p class="text-light pt-3"> Service For All</p>
+          <p class="text-light"> Provide Best Services</p>
+          <p class="text-light"> You Will Be Better Than Befor</p>
+        </div>
+        </div>
+      </div>
+      </div>
+      <div class="line4"></div>
+      <h3 class="ego text-center pt-4"> COPYRIGHT &copy; 2024 TO REEM RADWAN</h3>
+    </footer>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" ></script>
+
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

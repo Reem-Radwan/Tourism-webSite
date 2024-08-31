@@ -1,0 +1,255 @@
+*{
+    padding: 0;
+    margin:0 ;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Nerko One", cursive;
+    font-size: 20px;
+}
+
+.logo{
+    width: 75px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: rgb(249, 240, 240);
+    padding: 5px;
+}
+.ego{
+    color: rgb(101, 103, 103) !important; 
+}
+.log{
+    border: none;
+    background-color: rgb(101, 103, 103);
+}
+.sear{
+    border: none;
+    background-color:  rgb(52, 224, 224) !important;;
+}
+.navy {
+    color: rgb(52, 224, 224) !important;
+}
+.icons{
+    position: fixed;
+     top: 50%;
+     right: 0; 
+     transform: translateY(-50%); 
+     display: flex; 
+     justify-content: center; 
+     align-items: center; 
+     flex-direction: column; 
+    padding: 10px;
+     background-color: #6f6d6d;
+     z-index: 100;
+}
+
+.cards::after{
+    content: "";
+    width: 0;
+    position: absolute;
+    height: 0;
+    left: 0;
+    top: 0;
+    background-color: rgba(194, 199, 198, 0.5);
+    transition: 1s;
+    visibility: hidden;
+}
+
+.cards:hover::after{
+    width: 100%;
+    height: 100%;
+    visibility: visible;
+}
+
+.cardy{
+    margin: auto ;
+}
+
+.icons ul {
+    list-style: none; 
+    padding: 0; 
+    margin: 0; 
+}
+.icons ul li {
+    margin: 10px 0; 
+}
+.icons ul li a {
+    text-decoration: none; 
+    color:white;
+    font-size: 24px; 
+    transition: color 0.3s ease; 
+}
+
+.texto{
+    width: 100%;
+}
+
+.imo{
+    width: 100vw !important;
+    height: 100vh !important;
+}
+
+.overlay{
+   
+    background-color: #8d8787;
+    background-color: rgba(44, 44, 42, 0.7);
+    margin: auto;
+    border-radius: 20px;
+}
+
+.places{
+    height: 250px;
+    background-attachment: fixed;
+    background-image: url(../images/fixedimg1.png);
+    background-size: cover;
+}
+
+.places2{
+    height: 250px;
+    background-attachment: fixed;
+    background-image: url(../images/fixedimg2.png);
+    background-size: cover;
+}
+.cards{
+    width: 30%;
+   
+}
+.cardo{
+    margin-left: auto;
+}
+
+.cardss{
+    width: 40%;
+    transition: 1s;
+    background-color:  rgba( gray, 0.6);
+}
+
+.cardoo{
+    margin: auto;
+}
+
+.cardss:hover{
+    transform: scale(0.8);
+}
+.cardoo:hover {
+    background-color: rgba(101, 103, 103 , 0.3);
+}
+
+.welcome{
+    text-align: center;
+    background-color: rgb(52, 224, 224);
+}
+
+.welcome h2{
+    padding: 20px;
+    color:white;
+}
+
+.welcome p,.welcome1 p{
+    color: #8d8787;
+}
+hr{
+    color: #6f6d6d !important;
+}
+.welcome button ,.welcome1 button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    color: #6f6d6d;
+    background-color: white;
+}
+
+.welcome1{
+    text-align: center;
+    background-color: rgb(214, 214, 213);
+}
+
+.popular {
+    text-align: center;
+    border-radius: 20px;
+    background-color: #6f6d6d;
+}
+
+.clip,
+.clip1 {
+    height: auto;
+}
+
+.clip img,
+.clip1 img {
+    clip-path: polygon(0 0, 100% 0, 90% 100%, 0 100%) !important; /* Maintain your clipping for images */
+}
+
+.clip1 img {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 10% 100%) !important; /* Maintain your clipping for images */
+}
+
+@media (max-width: 768px) {
+    .card-body {
+        margin-left: 0; 
+        padding: 1rem; 
+    }
+
+    .clip img,
+    .clip1 img {
+        width: 100%;
+        height: auto; 
+    }
+}
+
+.line{
+    width: 90px;
+    height: 3px;
+    border-radius: 3px;
+    transition: 1s;
+    background-color:  rgb(101, 103, 103) ;
+}
+
+.line:hover{
+    width: 180px;
+}
+.bb{
+    border-radius: 5px;
+    padding: 5px;
+    border: none;
+    background-color: rgb(52, 224, 224); 
+}
+.bb:hover{
+    background-color: rgba(101, 103, 103 , 0.5);
+}
+
+.social {
+   
+    max-width: 200px;
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+    border: solid white;
+    margin: 0 auto;
+  }
+  
+  .join-us {
+    background-color: #f3f0f0;
+  }
+
+.foot{
+    width: 30%;
+    text-align: center;
+    border-top: 1px solid white ;
+}
+.footer{
+    height: 370px;
+}
+.footo{
+    margin-left: 5%;
+}
+.line1 , .line2 , .line3 {
+    border-top: 1px solid white ;
+}
+.line4{
+    width: 100%;
+    height: 1px;
+    background-color: white;
+}
+
